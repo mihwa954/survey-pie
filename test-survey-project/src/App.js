@@ -32,7 +32,7 @@ function App() {
           그래서 서비스 적으로 각각의 step을 라우터로 관리해주는게 사용성면에서 더 편리하다 */}
           {/* <Route path="/survey:surveyId/:step" element={<SurveyPage />} /> */}
 
-          <Route gfdffpath="/done" element={<CompletionPage />} />
+          <Route path="/done" element={<CompletionPage />} />
           {/* Route를 이렇게 쪼개주면 :step의 링크들은 Id를 부모 경로로 해서 이동을 하게된다 */}
           {/* 부모페이지, 자식 페이지를 만들기 위해서는 부모가 되는 페이지로 크게 감싸서 사용 */}
           <Route path="/survey/:surveyId" element={<SurveyPage />}>
@@ -43,17 +43,7 @@ function App() {
     </AppWrapper>
   );
 }
-function exe() {
-  someFunc();
-}
-function someFunc() {
-  SomeFunc2();
 
-  someUtil();
-
-  function someUtil() {}
-}
-function SomeFunc2() {}
 //<ProgressIndicator />
 //<QuestionBox /> 가장 처음에 컴포넌트를 이렇게 임시로 만들어서 출력이 잘 되는지 확인하기 위해서는
 // <ㅇㅇㅇㅇㅇ/>이런식으로 컴포넌트들을 옆으로 정렬 하도록 만들어야한다
@@ -85,10 +75,3 @@ const Box = styled.div`
 `;
 
 export default App;
-
-console.log(12354897845456);
-console.log(12354897845456);
-console.log(12354897845456);
-console.log(12354897845456);
-console.log(12354897845456);
-console.log(12354897845456);
